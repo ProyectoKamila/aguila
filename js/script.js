@@ -52,13 +52,12 @@ var currentYear = (new Date).getFullYear();
 })
 
 
-
 // DEVICE.JS AND SMOOTH SCROLLIG
-
+console.log(bloginfo);
 function include(url){document.write('<script type="text/javascript" src="'+url+'"></script>')}
-include('js/device.js');
-include('js/jquery.mousewheel.js');
-include('js/jquery.simplr.smoothscroll.js');
+include(bloginfo+'js/device.js');
+include(bloginfo+'js/jquery.mousewheel.js');
+include(bloginfo+'js/jquery.simplr.smoothscroll.js');
 
   $(function () { 
     if ($('html').hasClass('desktop')) {
